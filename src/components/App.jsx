@@ -1,22 +1,24 @@
-// import React from('react');
-// import VideoList from ('./VideoList.jsx');
-// import VideoListEntry from ('./VideoListEntry.jsx/');
-// import VideoPlayer from ('./VideoPlayer.jsx');
-// import Search from ('./Search.jsx');
+//exampleVideoDataimport React from('react');
+import VideoList from './VideoList.js';
+import VideoPlayer from './VideoPlayer.js';
+import Search from './Search.js';
+import exampleVideoData from '../data/exampleVideoData.js';
 
 var App = () => (
   <div>
     <nav className="navbar">
       <div className="col-md-6 offset-md-3">
-        <div><h5><em>search</em> view goes here</h5></div>
+        <div><h5><em>Search Video</em><Search /></h5></div>
       </div>
     </nav>
     <div className="row">
       <div className="col-md-7">
-        <div><h5><em>videoPlayer</em> view goes here</h5></div>
+        <div><h5><em>VideoPlayer</em><VideoPlayer video={exampleVideoData[0]}/></h5></div>
       </div>
       <div className="col-md-5">
-        <div><h5><em>videoList</em></h5></div>
+        <div>
+          <h5><em>VideoList</em><VideoList videos={exampleVideoData} /></h5>
+        </div>
       </div>
     </div>
   </div>
