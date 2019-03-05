@@ -1,3 +1,9 @@
+// import React from('react');
+// import VideoList from ('./VideoList.jsx');
+// import VideoListEntry from ('./VideoListEntry.jsx/');
+// import VideoPlayer from ('./VideoPlayer.jsx');
+// import Search from ('./Search.jsx');
+
 var App = () => (
   <div>
     <nav className="navbar">
@@ -10,7 +16,7 @@ var App = () => (
         <div><h5><em>videoPlayer</em> view goes here</h5></div>
       </div>
       <div className="col-md-5">
-        <div><h5><em>videoList</em> view goes here</h5></div>
+        <div><h5><em>videoList</em></h5></div>
       </div>
     </div>
   </div>
